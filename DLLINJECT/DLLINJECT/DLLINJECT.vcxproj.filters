@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PETOOL.h">
+    <ClInclude Include="DLLINJECT.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="PETOOLDlg.h">
+    <ClInclude Include="DLLINJECTDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -35,10 +35,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PETOOL.cpp">
+    <ClCompile Include="DLLINJECT.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="PETOOLDlg.cpp">
+    <ClCompile Include="DLLINJECTDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -46,17 +46,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="PETOOL.rc">
+    <ResourceCompile Include="DLLINJECT.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\PETOOL.rc2">
+    <None Include="res\DLLINJECT.rc2">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\PETOOL.ico">
+    <Image Include="res\DLLINJECT.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

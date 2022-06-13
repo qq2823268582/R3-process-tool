@@ -1,27 +1,27 @@
 ﻿
-// PETOOL.cpp: 定义应用程序的类行为。
+// DLLINJECT.cpp: 定义应用程序的类行为。
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "PETOOL.h"
-#include "PETOOLDlg.h"
+#include "DLLINJECT.h"
+#include "DLLINJECTDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// CPETOOLApp
+// CDLLINJECTApp
 
-BEGIN_MESSAGE_MAP(CPETOOLApp, CWinApp)
+BEGIN_MESSAGE_MAP(CDLLINJECTApp, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
 
-// CPETOOLApp 构造
+// CDLLINJECTApp 构造
 
-CPETOOLApp::CPETOOLApp()
+CDLLINJECTApp::CDLLINJECTApp()
 {
 	// 支持重新启动管理器
 	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_RESTART;
@@ -31,14 +31,14 @@ CPETOOLApp::CPETOOLApp()
 }
 
 
-// 唯一的 CPETOOLApp 对象
+// 唯一的 CDLLINJECTApp 对象
 
-CPETOOLApp theApp;
+CDLLINJECTApp theApp;
 
 
-// CPETOOLApp 初始化
+// CDLLINJECTApp 初始化
 
-BOOL CPETOOLApp::InitInstance()
+BOOL CDLLINJECTApp::InitInstance()
 {
 	// 如果一个运行在 Windows XP 上的应用程序清单指定要
 	// 使用 ComCtl32.dll 版本 6 或更高版本来启用可视化方式，
@@ -71,7 +71,7 @@ BOOL CPETOOLApp::InitInstance()
 	// 例如修改为公司或组织名
 	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
 
-	CPETOOLDlg dlg;
+	CDLLINJECTDlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)
@@ -105,3 +105,11 @@ BOOL CPETOOLApp::InitInstance()
 	return FALSE;
 }
 
+
+/*
+void CDLLINJECTApp::On32771()
+{
+	//1.清空所有列表内容
+	
+}
+*/
